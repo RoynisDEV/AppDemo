@@ -12,6 +12,7 @@ app.use(express.static(__dirname + "/public"));
 
 //Rutas Webs
 app.use('/', require('./router/RutasWeb'));
+app.use('/personas', require('./router/Personas'));
 
 //middleware de error
 app.use((req, res, next) =>{
